@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="styles2.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- creating the login main container -->
+    <div class="main-container">
+        <div class="login-container">
+
+            <!-- login logo -->
+            <div class="picture-tab">
+                <img src="img/laptop.png" alt="">
+            </div>
+
+            <!-- form section -->
+            <div class="form-tab">
+                <h2>Member login</h2>
+                <form name="myForm" method="post">
+                    <div class="input-group">
+                        <div class="input-field">
+                            <i class="ri-mail-fill"></i>
+                            <input type="email" name="Uemail" placeholder="Email..."  onkeyup="validateEmail()" id="contact-email">
+                            <i class="ri-checkbox-circle-fill success-icon"></i>
+                            <span id="email-error"></span>
+                        </div>
+
+                        <div class="input-field">
+                            <i class="ri-lock-fill"></i>
+                            <input type="password" name="Pass"  placeholder="........." onkeyup="validatePassword()" id="contact-password">
+                            <i class="ri-checkbox-circle-fill success-icon"></i>
+                            <span class="eye"><i id="hide1" class="ri-eye-fill" onclick="toggle()"></i></span>
+                            <span id="password-error"></span>
+                        </div>
+                        <div class="btn-field">
+                            <button onclick="return validateForm()" class="btn" value="login" onclick="myFunction()" >Login</button>
+                            <span id="submit-error"></span>
+                        </div>
+                        <div class="details">
+                            <p>Forget <a href="#">Username/Password?</a></p><br><br>
+                            <p id="create"><a href="#">Create your account <i class="ri-arrow-right-line"></i></a></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

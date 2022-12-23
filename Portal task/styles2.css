@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    background: purple;
+}
+
+.login-container{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    height: 70vh;
+    position: absolute;
+     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 20px;
+}
+
+.picture-tab{
+margin: auto;
+
+}
+
+.picture-tab img{
+    border-radius: 50%;
+    padding: 60px;
+    background: #dbdedc;
+    width: 130%;
+}
+
+.form-tab{
+    width: 40%;
+    max-width: 450px;
+ margin: auto;
+ padding: 50px 60px 70px;
+}
+.form-tab h2{
+    font-size: 30px;
+    margin-bottom: 35px;
+    position: relative;
+    text-align: center;
+}
+.input-field{
+    position: relative;
+    background: #eaeaea;
+    margin: 15px 10px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+}
+
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 13px 15px;
+}
+.input-field i{
+    margin-left: 15px;
+    color: #999;
+}
+form p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+form p a{
+    text-decoration: none;
+    color: rgb(7, 241, 7);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+form #create a{
+    text-decoration: none;
+    color: rgb(7, 241, 7);
+    font-size: 14px;
+    font-weight: bold;
+    align-items: center;
+    top: 29px;
+}
+
+.details{
+    margin-top: 30px;
+    
+}
+
+.btn-field button{
+    margin-top: 20px;
+    width: 100%;
+    background: rgb(7, 241, 7);
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.input-group{
+    height: 300px;
+}
+
+.input-field #password::placeholder{
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+}
+#create i{
+    margin-top: 13px;
+}
+
+.success-icon,
+.failure-icon {
+    right: 0;
+    opacity: 0;
+  }
+  
+  .failure-icon,
+  .error {
+    color: red;
+  }
+  
+  .success-icon {
+    color: green;
+  }
+  #hide1{
+    position: absolute;
+    right: 0%;
+    top: 48%;
+    cursor: pointer;
+    transform: translate(0, -50%);
+    color: #7a797e;
+    padding-right: 20px;
+  }
+
+  #submit-error{
+    padding-top: 4px;
+}
+
+span{
+    font-size: 0.5rem;
+    color: red;
+  
+}
+
+.input-group span i{
+    color: seagreen;
+    font-size: 1rem;
+}
+
+input:focus .active{
+    border: 2px solid green;
+}
+
+#email-error{
+
+}
+
+
+/* media query */
+
+/* mobile view */
+@media screen and (max-width: 767px){
+
+    .login-container{
+        display: block;
+        width: 90%;
+        height: 80vh;
+    }
+    .picture-tab{
+        background: none;
+    
+    }
+
+    .picture-tab img{
+        width: 25%;
+     border-radius: 50%;
+     padding: 10px;
+     background:#dbdedc ;
+     margin-left: 38%;
+    }
+
+    .form-tab{
+        width: 70%;
+    }
+
+}
+
+/* //media query for tablet view */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+    .login-container{
+        width: 95%;
+        height: 80vh;
+    }
+
+    .picture-tab img{
+        padding: 30px;
+        width: 100%;
+    }
+
+    .form-tab{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1025px){
+
+    .login-container{
+      
+        width: 95%;
+        height: 80vh;
+      
+    }
+}

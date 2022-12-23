@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student's Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <!-- side-menu of the dashboard -->
+        <div class="side-menu">
+            <div class="first-category">
+
+                <!-- hamburger for mobile navigation -->
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <h1><i class="fa fa-ils" aria-hidden="true"></i> Unive'</h1>
+            </div>
+        
+            <!-- side navigation  -->
+            <ul nav-menu>
+                <li class="nav-link"><i class="ri-dashboard-line"></i><a href="dashboard.html"><span>Dashboard</span> </a></li>
+                <li class="nav-link"><i class="fa fa-book" aria-hidden="true"></i> <span> Courses</span></li>
+                <li class="nav-link"><i class="ri-file-copy-line"></i><span> Materials</span></li>
+                <li class="nav-link"><i class="fa fa-calendar" aria-hidden="true"></i><span> Calendar</span></li>
+                <li class="nav-link"><i class="ri-article-line"></i> <span> Transcript</span></li>
+                <li class="nav-link"><i class="ri-star-line"></i> <span> Grades</span></li>
+                <li class="nav-link"><i class="ri-user-follow-line"></i> <span> Attendance</span></li>
+                <li class="nav-link"><i class="ri-settings-2-line"></i> <span> Settings</span></li>
+            </ul>
+
+        </div>
+    </section>
+
+    <!-- top bar navigation -->
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <div class="search">
+                    <input type="text" placeholder="Search course, student or instructor.....">
+                    <button type="submit"><i class="ri-search-line"></i></button>
+                </div>
+                <div class="user">
+
+                    <a href="#" class="btn"><i class="ri-messenger-line"></i></a>
+
+                    <a href="#" class="btn"><i class="ri-notification-4-line"></i></a>
+
+                    <div class="image-case">
+                        <img src="img/istockphoto-1386479313-170667a.jpg" alt="">
+                    </div>
+                    <p>Mia V <br> <span>Student</span> </p>
+                    <i class="ri-more-2-line" id="colon"></i>
+                </div>
+            </div>
+        </div>
+    
+    <!-- first section of the middle container -->
+        <div class="content">
+            <h3>Hello, Mia!</h3>
+            <div class="custom">
+                <h6><i class="ri-function-line"></i> Customize</h6>
+            </div>
+        </div>
+
+    <!-- active program section -->
+        <div class="active-program">
+            <div class="program">
+                <h4>Active Courses</h4>
+                <i class="ri-more-line"></i>
+            </div>
+
+            <div class="courses">
+                <div class="mini-course">
+                    <img src="img/shortcut.png" alt="">
+
+                    <div class="first-course">
+                        <h4>MASTER OF COMPUTER SCIENCE</h4>
+                        <P>University of Upstate <br> at Brookstone</P>
+                    </div>
+                    <div class="numbers">
+                        <div class="options">
+                            <h2>1 <br> <span>Course <br>Assignments</span></h2>
+                        </div>
+
+                        <div class="options">
+                            <h2>5 <br> <span>Course <br>Assignments</span></h2>
+                        </div>
+
+                        <div class="options">
+                            <h2>A- <br> <span>Course <br>Assignments</span></h2>
+                        </div>
+                        <div class="options" id="percentage">
+                            <h3 id="circle">45% </h3><br> <span>Completion</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="mini-course">
+                    <img src="img/shortcut.png" alt="">
+
+                    <div class="first-course">
+                        <h4>MASTER OF COMPUTER SCIENCE</h4>
+                        <P>University of Upstate <br> at Brookstone</P>
+                    </div>
+                    <div class="numbers">
+                        <div class="options">
+                            <h2>0 <br> <span>Course <br>Assignments</span></h2>
+                        </div>
+
+                        <div class="options">
+                            <h2>6 <br> <span>Course <br>Assignments</span></h2>
+                        </div>
+
+                        <div class="options">
+                            <h2>-- <br> <span>Course <br>Assignments</span></h2>
+                        </div>
+                        <div class="options" id="percentage">
+                            <h3 id="circle1">25% </h3> <br> <span>Completion</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- upcoming session section -->
+        <div class="upcoming-session">
+            <div class="session-gallery">
+                <img src="img/picture1.jpeg" alt="">
+                <div class="checked">
+                    <i class="ri-check-line"></i>
+                    <H4>Checked</H4>
+                </div>
+            </div>
+
+            <div class="main-session">
+                <div class="upcoming">
+                    <h6>Upcoming Session</h6>
+                    <i class="ri-more-line"></i>
+                </div>
+                <div class="session-date">
+                    <p>Date</p>
+                    <p id="class">Class</p>
+                    <p id="time">Time</p>
+                </div>
+
+                <div class="session-content">
+                    <div class="date-session">
+                        <h5>Tomorrow <br><span>09</span> <br>April</h5>
+                    </div>
+                    <div class="session-container">
+                        <div class="session-information">
+                            <h5>Database and Information system <br><span>Master of Computer Science</span></h5>
+                        </div>
+                        <div class="time-session">
+                            <p>8:30am - 1:00pm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- message tab section -->
+        <div class="messaging-container">
+            <div class="messaging-tab">
+                <img src="img/istockphoto-1386479313-170667a.jpg" alt="">
+                <p>Messaging</p>
+                <i class="ri-search-line"></i>
+                <i class="ri-share-box-line"></i>
+                <i class="ri-more-line"></i>
+                <i class="ri-arrow-down-s-line"></i>
+            </div>
+
+            <div class="friends-container">
+                <div class="add-option">
+                    <i class="ri-add-line"></i>
+                    <p>Add</p>
+                </div>
+                <div class="friends-details">
+                    <img src="img/istockphoto-1386479313-170667a.jpg" alt="">
+                    <p>Chinedu</p>
+                </div>
+                <div class="friends-details">
+                    <img src="img/istockphoto-1386479313-170667a.jpg" alt="">
+                    <p>Oscar</p>
+                </div>
+                <div class="friends-details">
+                    <img src="img/istockphoto-1386479313-170667a.jpg" alt="">
+                    <p>Mary</p>
+                </div>
+                <div class="friends-details">
+                    <img src="img/istockphoto-1386479313-170667a.jpg" alt="">
+                    <p>Miles</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="textmsg-container">
+            <div class="textmsg">
+                <img src="img/istockphoto-1386479313-170667a.jpg" alt="">
+                <p>Sophia Kowalski <br><br> Thanks Mia, Please let <br> me when i can</p>
+
+                <p id="duration">15 mins <br> <br><br> <span>1</span></p>
+            </div>
+        </div>
+        <div class="textmsg1-container">
+            <div class="textmsg1">
+                <img src="img/istockphoto-1386479313-170667a.jpg" alt="">
+                <p id="duration2">Sophia Kowalski <span><br><br> Thanks Mia, Please let <br> me when i can</span> </p>
+
+                <p id="duration">15 mins <br> <br><br> <span>1</span></p>
+            </div>
+        </div>
+
+        <div class="group-msg">
+            <div class="group-chats">
+                <div class="group-pics">
+                    <div class="group-pictures">
+                        <div class="first-group">
+                            <img src="img/istockphoto-1386479313-170667a.jpg" alt="">
+                            <img src="img/istockphoto-1386479313-170667a.jpg" alt="">
+                        </div>
+                        <div class="first-group">
+                            <img src="img/istockphoto-1386479313-170667a.jpg" alt="">
+                            <img src="img/istockphoto-1386479313-170667a.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="group-text">
+                        <p>Ex Remedy App Group <br><br> <span>Jarvis: How about i start <br>compiling all feedback...</span></p>
+                    </div>
+                    <div class="group-text-duration">
+                        
+                        <p id="duration2">15 mins <br> <br><br> <span>10</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
